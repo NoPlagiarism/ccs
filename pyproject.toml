@@ -1,0 +1,28 @@
+[project]
+name = "ccs"
+version = "1.0.0"
+description = "Simple cli program to control MC servers using Crafty Controller API"
+readme = "ReadMe.md"
+authors = [
+    { name = "NoPlagiarism", email = "37241775+NoPlagiarism@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.5.0",
+    "httpx2>=2.12.0",
+    "loguru>=0.7.3",
+    "python-dotenv>=1.2.3",
+]
+
+[dependency-groups]
+dev = [
+    "nuitka[app]>=4.2.2",
+    "pep723fy>=0.0.1",
+]
+
+[project.scripts]
+ccs = "ccs:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
