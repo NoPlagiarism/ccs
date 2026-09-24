@@ -2,6 +2,36 @@
 
 Simple cli program to control MC servers using [Crafty Controller](https://craftycontrol.com) API
 
+## Install
+
+### Python
+
+It is recommended to use [uv](https://docs.astral.sh/uv). Python versions from 3.12 and above are supported
+
+- [Use ccs.py script from releases](https://github.com/NoPlagiarism/ccs/releases/latest) with [PEP723](https://peps.python.org/pep-0723)
+  - ```bash
+    uv run ccs.py
+    ```
+- Install with [uv tool install](https://docs.astral.sh/uv/guides/tools/#installing-tools)
+  - ```bash
+    uv tool install git+https://github.com/NoPlagiarism/ccs.git
+    ```
+- Run with uvx
+  - ```bash
+    uvx git+https://github.com/NoPlagiarism/ccs.git --help
+    ```
+
+### Binaries
+
+Currently only supported systems are Windows 10/11 x64 (AMD)
+
+- Use [scoop](https://scoop.sh)
+  - ```pwsh
+    scoop bucket add noplag https://github.com/NoPlagiarism/noplag
+    scoop install noplag/ccs
+    ```
+- [Download manually from releases](https://github.com/NoPlagiarism/ccs/releases/latest)
+
 ## Usage
 
 To list servers and their ids
