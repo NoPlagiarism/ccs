@@ -86,7 +86,7 @@ address = "127.0.0.1:3229"
 directory = "."
 # or ccs.exe for standalone executable
 # --sleep {approximate time for server start}
-command = "uv run ccs.py --file-log --api-key \"eyJhbG...\" server --server-id 3c8b2750-064d-4745-b1bd-e7a006df7149 start --sleep 28"
+command = "uvx git+https://github.com/NoPlagiarism/ccs.git --file-log --api-key \"eyJhbG...\" server --server-id 3c8b2750-064d-4745-b1bd-e7a006df7149 start --sleep 28"
 
 [join]
 # Other methods were not tested
